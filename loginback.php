@@ -39,10 +39,12 @@ if(isset($_POST['login']))
 
     }
     else{
-         echo "Sorry !!! You can't  login something might be wrong check again ";
-         ?>
-         <a href="login.php">Go back</a>
-         <?php
+         
+         $_SESSION['loginmessage'] = "Email Or Password Incorrect !!";
+         // echo $_SESSION['loginmessage'];
+         header("location:login.php");
+         
+         
      
        }
        

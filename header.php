@@ -111,7 +111,6 @@ include"loginback.php";
                 }
               }
 
-
               else{
                 echo'<li> No message</li>';
 

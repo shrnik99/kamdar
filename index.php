@@ -12,7 +12,7 @@ include "header.php";
   <script type="text/javascript " src="bootstrapjs/bootstrap.min.js"></script>
   <script type="text/javascript " src="bootstrapjs/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" type="text/css" href="css/indexstylee.css">
+   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 <div class="container">
@@ -55,15 +55,18 @@ include "header.php";
 
   </div>
   <div class="right">
+    <div>
     <div class="search">
-     <?php 
+     
+          <?php 
   if (!isset($_SESSION['role'])) {
     ?>
     <nav class="navbar navbar-expand-lg " id="nav">
     <div class="search col-md-6 mr-auto">
       <form class="form-inline " action="profile.php" method="get" style=" display:inline;">
         <input class="form-control " type="search" placeholder="Search" aria-label="Search" id="search" name="searchText">
-        <button class="btn btn-outline-success " type="submit" name="searchSubmit">Search</button>
+          <button class="btn btn-outline-success " type="submit" name="searchSubmit">Search</button>
+        
       </form>
     </div>
 
@@ -75,10 +78,13 @@ include "header.php";
   }
 
   ?>
-</div>
-    
+      </div>
+    </div>
+      
+   
+  <div>
 <img src="images\front.jpg" class="ima">
-
+</div>
   </div>
 </div>
 
@@ -136,7 +142,7 @@ include "header.php";
   <div class="card" style="border:0px ">
     <img src="images\gas.jpg" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title" >Gas delivery</h5>
+      <h5 class="card-title" >Water delivery</h5>
       
       
     </div>

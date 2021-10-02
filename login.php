@@ -28,7 +28,17 @@
             <div class=" loginBox card border-0 px-4 py-5 ">
                 <div class="row mb-4 px-3">
 
-                    <h6 class="mb-0 mr-4 mt-2" >In Future Sign in with</h6>
+                    <?php 
+                    session_start();
+                    if(isset($_SESSION['loginmessage'])){
+                        ?>
+                        <span style="color: red;"><?php echo $_SESSION['loginmessage']; ?></span>
+                        <?php
+                    }
+
+                    ?>
+
+                    <!-- <h6 class="mb-0 mr-4 mt-2" >In Future Sign in with</h6>
                     <div class="facebook text-center mr-3">
                         <div class="fa fa-facebook">
 
@@ -48,13 +58,13 @@
                         <div class="fa fa-google">
 
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="row px-3 mb-4">
                     <div class="line">
 
                     </div>
-                    <small class="or text-center">Or</small>
+                  
                     <div class="line">
 
                     </div>
@@ -70,7 +80,7 @@
                 </div>
                 <div class="row px-3 mb-4">
 
-                    <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+                    <!-- <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a> -->
                 </div>
 
                 <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center" name="login">Login</button> </div>

@@ -95,9 +95,10 @@ p{
 .search{
   width: 50%;
   height: fit-content;
-/*  background-color: red;*/
+  /*background-color: red;*/
   float: right;
 }
+
 #nav{
   width: 100%;
   margin-left: 50%;
